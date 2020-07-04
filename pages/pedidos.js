@@ -1,14 +1,15 @@
+import React from "react";
 import Head from "next/head";
 import Layout from "../components/Layout";
 
-const Index = () => {
+const Pedidos = () => {
   return (
     <div>
       <Layout>
-        <h2 className="text-2xl text-gray-800 font-light">Clientes</h2>
+        <h2 className="text-2xl text-gray-800 font-light">Pedidos</h2>
       </Layout>
     </div>
   );
 };
 
-export default Index;
+export default Pedidos;
