@@ -39,6 +39,12 @@ const Login = () => {
                   placeholder="Password Usuario"
                 />
               </div>
+
+              <input
+                type="submit"
+                className="bg-gray-800 w-full mt-5 p-2 text-white uppercase hover:bg-gray-900"
+                value="Iniciar Sesion"
+              />
             </form>
           </div>
         </div>

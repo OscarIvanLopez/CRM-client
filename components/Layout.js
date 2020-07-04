@@ -24,7 +24,7 @@ const Layout = ({ children }) => {
           rel="stylesheet"
         />
       </Head>
-      {router.pathname === "/login" || router.pathname === "/nuevacuenta" ? (
+      {router.pathname === "/login" || router.pathname === "/nuevaCuenta" ? (
         <div className="bg-gray-800 min-h-screen flex flex-col justify-center">
           <div>
           {children}
