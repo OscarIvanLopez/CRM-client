@@ -60,22 +60,27 @@ const NuevaCuenta = () => {
 
         //Redirigir al usuario
       } catch (error) {
-        console.log(error);
+        guardarMensaje(error.message.replace("GraphQL error: ", ""));
+
+        setTimeout(() => {
+          guardarMensaje(null);
+        }, 3000);
       }
     },
   });
 
   const mostrarMensaje = () => {
-    return(
-      <div className="bg-white py-2 px-3 w-full my-3">
+    return (
+      <div className="bg-white py-2 px-3 my-3 w-full max-w-sm text-center mx-auto ">
         <p>{mensaje}</p>
       </div>
     );
   };
+
   return (
     <Fragment>
-      {mensaje && mostrarMensaje()}
       <Layout>
+        {mensaje && mostrarMensaje()}
         <h1 className="text-center text-2xl text-white font-light">
           Crear Nueva Cuenta
         </h1>
