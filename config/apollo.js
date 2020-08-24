@@ -3,7 +3,7 @@ import fetch from "node-fetch";
 import { setContext } from "apollo-link-context";
 
 const httpLink = createHttpLink({
-  url: "https://localhost:400/",
+  uri: "http://localhost:4000/",
   fetch,
 });
 
