@@ -39,11 +39,11 @@ const Index = () => {
           </thead>
 
           <tbody className="bg-white">
-              {data.obtenerClientesVendedor.map( cliente => (
+              {/* {data.obtenerClientesVendedor.map( cliente => (
                <tr key={cliente.id}>
                  <td className="border px-4 py-2">{cliente.nombre} {cliente.apellido}</td>
                </tr>
-              ))}
+              ))} */}
               </tbody>
         </table>
       </Layout>
